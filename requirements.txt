@@ -1,0 +1,9 @@
+streamlit==1.51.0
+langchain
+langchain-core
+langchain-community
+python-dotenv
+chromadb
+langchain-huggingface
+langchain-groq
+pandas
