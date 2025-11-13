@@ -53,10 +53,14 @@ Built using:
 ## 🖥️ Interface Preview
 
 📈 Agentic Data Analyst
+
 ──────────────────────────
+
 [Upload File] ← CSV or Excel
 [Enter GROQ API Key]
+
 ──────────────────────────
+
 💬 Chat Example:
 User: Show me missing values
 Assistant: The following columns contain nulls:
@@ -64,6 +68,7 @@ Assistant: The following columns contain nulls:
 result = df.isnull().sum()
 print(result[result > 0])
 </CODE>
+
 ──────────────────────────
 
 ---
