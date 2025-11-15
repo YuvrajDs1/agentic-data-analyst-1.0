@@ -67,6 +67,12 @@ print(result[result > 0])
 
 ---
 
+## Live
+
+Link to access: https://agentic-data-analyst-1-0.streamlit.app/
+
+---
+
 ## ⚙️ Installation & Setup
 
 ### 🪜 Clone the Repository
