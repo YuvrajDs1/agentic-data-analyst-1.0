@@ -24,6 +24,28 @@ st.sidebar.markdown("[Get a GROQ API key](https://console.groq.com/docs/models)"
 model_choice = st.sidebar.selectbox("Model", options=['llama-3.1-70b-versatile', 'llama-3.1-8b-instant'], index=1)
 temperature = st.sidebar.slider("Temperature", 0.0, 1.0, 0.1, step=0.1)
 
+st.sidebar.markdown(
+    """
+<div style="
+    margin-top: 40px;
+    padding: 1rem; 
+    background-color: rgb(187, 187, 60); 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.4;
+">
+    <strong>I am an Agentic Data Analyst</strong><br>
+    I can help you perform analysis on any kind of valid xlsx/csv data.
+    <br>
+    I am made by <br>
+    <a href="https://github.com/YuvrajDs1" style="color: white; font-style: normal">Yuvraj Desai</a>
+</div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Require API key 
 if not api_value:
     st.warning("⚠️ Please enter your API key to proceed.")
