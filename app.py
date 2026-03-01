@@ -8,7 +8,6 @@ from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 import io
-import json
 import re
 
 
@@ -20,7 +19,7 @@ st.sidebar.header("⚙️ Configuration")
 api_value = st.sidebar.text_input("Enter your GROQ API key", type='password')
 st.sidebar.markdown("[Get a GROQ API key](https://console.groq.com/docs/models)")
 
-model_choice = st.sidebar.selectbox("Model", options=['llama-3.1-70b-versatile', 'llama-3.1-8b-instant'], index=1)
+model_choice = st.sidebar.selectbox("Model", options=['llama-3.1-70b-versatile', 'llama-3.1-8b-instant', "openai/gpt-oss-120b"], index=1)
 temperature = st.sidebar.slider("Temperature", 0.0, 1.0, 0.1, step=0.1)
 
 st.sidebar.markdown(
